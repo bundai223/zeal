@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  workspace:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    # ポート待受していないコンテナがすぐ終了してしまうのを防ぐ
+    tty: true
+    # コンテナの標準に入力をオープンにする
+    stdin_open: true
+
+networks:
+  default:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: ${MTU:-1258}
