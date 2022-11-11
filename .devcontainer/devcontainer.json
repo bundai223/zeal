@@ -1,17 +1,15 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/rust
 {
-	"name": "zeal dev container",
+  "name": "zeal dev container",
   "dockerComposeFile": "docker-compose.yml",
   "service": "workspace",
   "workspaceFolder": "/zeal",
   "settings": {},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
-
-	// Comment out to run as root instead.
-	"remoteUser": "root"
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "rustc --version",
+  // Comment out to run as root instead.
+  "remoteUser": "root"
 }
